@@ -13,7 +13,7 @@
 # limitations under the License.
 
 from .adalora import AdaLoraConfig, AdaLoraModel
-from .adamss import AdamssConfig, AdamssModel, ASACallback
+from .adamss import AdamssConfig, AdamssModel, AdamssASACallback
 from .adaption_prompt import AdaptionPromptConfig, AdaptionPromptModel
 from .boft import BOFTConfig, BOFTModel
 from .bone import BoneConfig, BoneModel
@@ -66,7 +66,7 @@ __all__ = [
     "AdaLoraModel",
     "AdamssConfig",
     "AdamssModel",
-    "ASACallback",
+    "AdamssASACallback",
     "AdaptionPromptConfig",
     "AdaptionPromptModel",
     "ArrowConfig",
