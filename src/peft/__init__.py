@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-__version__ = "0.18.1.dev0"
+__version__ = "0.18.2.dev0"
 
 from .auto import (
     MODEL_TYPE_TO_PEFT_MODEL_MAPPING,
@@ -84,6 +84,7 @@ from .tuners import (
     LoKrConfig,
     LoKrModel,
     LoraConfig,
+    LoraGAConfig,
     LoraModel,
     LoraRuntimeConfig,
     MissConfig,
@@ -124,6 +125,7 @@ from .tuners import (
     create_arrow_model,
     get_eva_state_dict,
     initialize_lora_eva_weights,
+    preprocess_loraga,
     save_as_lora,
 )
 from .tuners.cartridge.utils import (
@@ -199,6 +201,7 @@ __all__ = [
     "LoKrModel",
     "LoftQConfig",
     "LoraConfig",
+    "LoraGAConfig",
     "LoraModel",
     "LoraRuntimeConfig",
     "MissConfig",
@@ -266,6 +269,7 @@ __all__ = [
     "inject_adapter_in_model",
     "load_peft_weights",
     "prepare_model_for_kbit_training",
+    "preprocess_loraga",
     "prompt_embeddings_from_past_key_values",
     "replace_lora_weights_loftq",
     "save_as_lora",
